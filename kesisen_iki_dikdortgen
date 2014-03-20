@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    struct point{
+           int x,y,z,t,a,b,c,d;
+           };
+           struct point p1,k1;
+                  int alan1,alan2;
+                  printf("ilk olusacak dikdortgenin 1.noktasinin x ve y koordinatlarini sirasiyla girin:\n");
+                  scanf("%d%d",&p1.x,&p1.y);
+                  printf("noktalarin karsilikli olmasina dikkat edin.\n");
+                  printf("ilk olusacak dikdortgenin 2.noktasinin x ve y koordinatlarini sirasiyla girin:\n");
+                  scanf("%d%d",&p1.z,&p1.t);
+                  alan1=(p1.x-p1.z)*(p1.t-p1.y);
+                  printf("ilk dikdortgenin alani:%d\n",alan1);
+                  printf("ikinci olusacak dikdortgenin 1.noktasinin x ve y koordinatlarini sirasiyla girin:\n");
+                  scanf("%d%d",&k1.x,&k1.y);
+                  printf("noktalarin karsilikli olmasina dikkat edin.\n");
+                  printf("ikinci olusacak dikdortgenin 2.noktasinin x ve y koordinatlarini sirasiyla girin:\n");
+                  scanf("%d%d",&k1.z,&k1.t);
+                  alan2=(k1.x-k1.z)*(k1.t-k1.y);
+                  printf("ikinci dikdortgenin alani:%d\n",alan2);
+                  getch();
+                  return 0;
+}
